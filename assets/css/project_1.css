@@ -1,0 +1,377 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "bluuNext";
+  src: url("../../assets/fonts/BluuNext-Bold.otf") format("opentype");
+}
+.navbar {
+  width: 100%;
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 42px;
+  font-family: "bluuNext";
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #005A2B;
+  border: 1px solid #005A2B;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #005A2B;
+  color: #ECE8D9;
+}
+
+@font-face {
+  font-family: "bluuNext";
+  src: url("../../assets/fonts/BluuNext-Bold.otf") format("opentype");
+}
+/* ── Compiled from SASS ── */
+/* Variables */
+/* $bg: #fafaf0 */
+/* $folder-bg: #d4edda */
+/* $folder-bg-active: #a8d5b5 */
+/* $folder-shadow: rgba(0,80,40,0.18) */
+/* $folder-border: rgba(255,255,255,0.6) */
+/* $panel-bg: #d4d4d8 */
+/* $panel-radius: 18px */
+/* $sidebar-width: 180px */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Instrument Sans", sans-serif;
+  background: #ececec;
+  overflow: hidden;
+}
+
+/* ── Layout */
+.portfolio-layout {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  height: 100vh;
+  align-items: flex-start;
+}
+
+/* ── Sidebar */
+.sidebar {
+  width: 180px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  height: calc(100vh - 48px);
+  overflow-y: auto;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(0, 60, 30, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0, 100, 50, 0.2);
+  border-radius: 4px;
+}
+
+/* ── Carpeta */
+.folder-item {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 110px;
+  flex-shrink: 0;
+  /* overflow visible para que la imagen pueda salir hacia arriba en hover */
+  overflow: visible;
+}
+
+/* Pestaña */
+.folder-tab {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 44px;
+  height: 16px;
+  background: rgba(181, 223, 192, 0.62);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px 6px 0 0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+/* Cuerpo — z-index 5 para tapar la imagen cuando está dentro */
+.folder-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: rgba(212, 237, 218, 0.62);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 4px 12px 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 46px 23px rgba(255, 255, 255, 0.23);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.folder-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+}
+
+/* Líneas decorativas dentro de la carpeta */
+.folder-body::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 2px;
+  box-shadow: 0 -7px 0 rgba(255, 255, 255, 0.38), 0 -14px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* Estado activo */
+.folder-item.is-active .folder-body {
+  background: rgba(168, 213, 181, 0.72);
+  box-shadow: 0 12px 30px rgba(0, 80, 40, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 46px 23px rgba(255, 255, 255, 0.23);
+}
+
+.folder-item.is-active .folder-tab {
+  background: rgba(136, 196, 154, 0.72);
+}
+
+/* Imagen de preview — queda DETRÁS del cuerpo de la carpeta */
+.folder-preview {
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0px);
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.32);
+  will-change: transform;
+  z-index: 3;
+  /* por encima de la pestaña (z:1) pero detrás del cuerpo (z:5) */
+  pointer-events: none;
+}
+
+/* ── Panel contenido */
+.content-panel {
+  flex: 1;
+  height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  padding-right: 4px;
+  scroll-behavior: smooth;
+}
+
+.content-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content-panel::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+}
+
+/* Slide de proyecto */
+.project-slide {
+  width: 100%;
+  min-height: 340px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+  will-change: transform, opacity;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(220px, 32vh);
+  gap: 16px;
+}
+
+.project-slide:has(> img:first-child:nth-last-child(4)) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-slide:has(> img:first-child:nth-last-child(8)) {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: minmax(210px, 28vh);
+}
+
+.project-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  min-height: 0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
+.project-slide img:first-child:nth-last-child(3),
+.project-slide img:first-child:nth-last-child(3) ~ img {
+  min-height: 360px;
+}
+
+.project-slide img:first-child:nth-last-child(5) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.project-slide img:first-child:nth-last-child(5) ~ img,
+.project-slide img:first-child:nth-last-child(8) ~ img {
+  min-height: 220px;
+}
+
+.project-slide img:first-child:nth-last-child(4),
+.project-slide img:first-child:nth-last-child(4) ~ img {
+  min-height: 300px;
+}
+
+/* Placeholder gris */
+.project-slide.placeholder {
+  background: linear-gradient(135deg, #c8c8cc 0%, #d8d8dc 50%, #c0c0c4 100%);
+  min-height: 340px;
+}
+
+/* Texto placeholder */
+.slide-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.04em;
+}
+
+/* Nombre del proyecto dentro de la carpeta */
+.folder-name {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgba(0, 70, 35, 0.75);
+  z-index: 6;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.folder-item.is-active .folder-name {
+  color: rgba(0, 60, 28, 0.95);
+}
+
+/* Highlight ring cuando se activa desde sidebar */
+.project-slide.highlighted {
+  outline: 3px solid rgba(120, 200, 150, 0.7);
+  outline-offset: -3px;
+}
+
+@media (max-width: 1000px) {
+  .project-slide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: minmax(200px, 30vh);
+  }
+}
+@media (max-width: 700px) {
+  html,
+  body {
+    overflow: auto;
+  }
+  .portfolio-layout {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .folder-item {
+    width: 150px;
+  }
+  .content-panel {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding-right: 0;
+  }
+  .project-slide {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(260px, 58vw);
+  }
+  .project-slide img:first-child:nth-last-child(5) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/*# sourceMappingURL=project_1.css.map */

@@ -1,0 +1,62 @@
+[
+  {
+    "projectId": 0,
+    "title": "Captive prince",
+    "subtitle": "Editorial",
+    "books": [
+      "assets/img/pj1_img1.jpg",
+      "assets/img/pj1_img2.jpg",
+      "assets/img/pj1_img3.jpg"
+    ]
+  },
+  {
+    "projectId": 1,
+    "title": "Mangakai",
+    "subtitle": "Editorial",
+    "books": [
+      "assets/img/pj2_img1.jpg",
+      "assets/img/pj2_img2.jpg",
+      "assets/img/pj2_img3.jpg"
+    ]
+  },
+  {
+    "projectId": 2,
+    "title": "Chimpatia",
+    "subtitle": "Branding",
+    "books": [
+      "assets/img/pj3_img1.jpg",
+      "assets/img/pj3_img2.jpg",
+      "assets/img/pj3_img3.jpg"
+    ]
+  },
+  {
+    "projectId": 3,
+    "title": "Ciiudades",
+    "subtitle": "Stamping",
+    "books": [
+      "assets/img/pj4_img1.jpg",
+      "assets/img/pj4_img2.jpg",
+      "assets/img/pj4_img3.jpg"
+    ]
+  },
+  {
+    "projectId": 4,
+    "title": "Kirby",
+    "subtitle": "UX/UI",
+    "books": [
+      "assets/img/pj5_img1.png",
+      "assets/img/pj5_img2.png",
+      "assets/img/pj5_img3.png"
+    ]
+  },
+  {
+    "projectId": 5,
+    "title": "Cata la lata",
+    "subtitle": "Packaging",
+    "books": [
+      "assets/img/pj6_img1.jpg",
+      "assets/img/pj6_img2.jpg",
+      "assets/img/pj6_img3.jpg"
+    ]
+  }
+]

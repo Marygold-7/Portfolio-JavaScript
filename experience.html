@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="assets/css/experience.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="app/app.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">M̌</div>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" aria-label="Primary navigation">
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="cv-wrap">
+
+        <div class="folders-row">
+
+            <div class="folder-item is-active" data-target="education">
+                <div class="folder-visual">
+                    <div class="folder-card-back"></div>
+                    <div class="folder-svg-wrap">
+                        <svg viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g-edu-body" x1="0" y1="0" x2="90" y2="80"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#f9d97a" />
+                                    <stop offset="50%" stop-color="#b8e08a" />
+                                    <stop offset="100%" stop-color="#7ac8a0" />
+                                </linearGradient>
+                                <linearGradient id="g-edu-tab" x1="0" y1="0" x2="50" y2="20"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#fce89a" />
+                                    <stop offset="100%" stop-color="#c5e89a" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M6 22 Q6 14 14 14 L38 14 Q44 14 46 20 L50 26 L6 26 Z" fill="url(#g-edu-tab)"
+                                opacity="0.9" />
+                            <rect x="6" y="24" width="78" height="50" rx="10" fill="url(#g-edu-body)" opacity="0.88" />
+                            <rect x="18" y="58" width="54" height="2.5" rx="1.5" fill="rgba(255,255,255,0.55)" />
+                            <rect x="18" y="64" width="38" height="2.5" rx="1.5" fill="rgba(255,255,255,0.35)" />
+                            <rect x="6" y="24" width="78" height="18" rx="10" fill="rgba(255,255,255,0.18)" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="folder-label">Education</span>
+            </div>
+
+            <div class="folder-item" data-target="work">
+                <div class="folder-visual">
+                    <div class="folder-card-back"></div>
+                    <div class="folder-svg-wrap">
+                        <svg viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g-work-body" x1="0" y1="0" x2="90" y2="80"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#f0c080" />
+                                    <stop offset="45%" stop-color="#c898d8" />
+                                    <stop offset="100%" stop-color="#88b8e8" />
+                                </linearGradient>
+                                <linearGradient id="g-work-tab" x1="0" y1="0" x2="50" y2="20"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#f8d090" />
+                                    <stop offset="100%" stop-color="#d0a8e0" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M6 22 Q6 14 14 14 L38 14 Q44 14 46 20 L50 26 L6 26 Z" fill="url(#g-work-tab)"
+                                opacity="0.9" />
+                            <rect x="6" y="24" width="78" height="50" rx="10" fill="url(#g-work-body)" opacity="0.88" />
+                            <rect x="18" y="58" width="54" height="2.5" rx="1.5" fill="rgba(255,255,255,0.55)" />
+                            <rect x="18" y="64" width="38" height="2.5" rx="1.5" fill="rgba(255,255,255,0.35)" />
+                            <rect x="6" y="24" width="78" height="18" rx="10" fill="rgba(255,255,255,0.18)" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="folder-label">Work Experience</span>
+            </div>
+
+            <div class="folder-item" data-target="abilities">
+                <div class="folder-visual">
+                    <div class="folder-card-back"></div>
+                    <div class="folder-svg-wrap">
+                        <svg viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g-ab-body" x1="0" y1="0" x2="90" y2="80"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#f8b090" />
+                                    <stop offset="50%" stop-color="#e898c0" />
+                                    <stop offset="100%" stop-color="#9898e0" />
+                                </linearGradient>
+                                <linearGradient id="g-ab-tab" x1="0" y1="0" x2="50" y2="20"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#fac0a0" />
+                                    <stop offset="100%" stop-color="#f0a0cc" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M6 22 Q6 14 14 14 L38 14 Q44 14 46 20 L50 26 L6 26 Z" fill="url(#g-ab-tab)"
+                                opacity="0.9" />
+                            <rect x="6" y="24" width="78" height="50" rx="10" fill="url(#g-ab-body)" opacity="0.88" />
+                            <rect x="18" y="58" width="54" height="2.5" rx="1.5" fill="rgba(255,255,255,0.55)" />
+                            <rect x="18" y="64" width="38" height="2.5" rx="1.5" fill="rgba(255,255,255,0.35)" />
+                            <rect x="6" y="24" width="78" height="18" rx="10" fill="rgba(255,255,255,0.18)" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="folder-label">Abilities</span>
+            </div>
+
+            <div class="folder-item" data-target="programming">
+                <div class="folder-visual">
+                    <div class="folder-card-back"></div>
+                    <div class="folder-svg-wrap">
+                        <svg viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g-prog-body" x1="0" y1="0" x2="90" y2="80"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#a0c8f8" />
+                                    <stop offset="50%" stop-color="#c0a8e8" />
+                                    <stop offset="100%" stop-color="#f0b888" />
+                                </linearGradient>
+                                <linearGradient id="g-prog-tab" x1="0" y1="0" x2="50" y2="20"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#b8d8f8" />
+                                    <stop offset="100%" stop-color="#ccb8ec" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M6 22 Q6 14 14 14 L38 14 Q44 14 46 20 L50 26 L6 26 Z" fill="url(#g-prog-tab)"
+                                opacity="0.9" />
+                            <rect x="6" y="24" width="78" height="50" rx="10" fill="url(#g-prog-body)" opacity="0.88" />
+                            <rect x="18" y="58" width="54" height="2.5" rx="1.5" fill="rgba(255,255,255,0.55)" />
+                            <rect x="18" y="64" width="38" height="2.5" rx="1.5" fill="rgba(255,255,255,0.35)" />
+                            <rect x="6" y="24" width="78" height="18" rx="10" fill="rgba(255,255,255,0.18)" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="folder-label">Programming</span>
+            </div>
+
+            <div class="folder-item" data-target="languages">
+                <div class="folder-visual">
+                    <div class="folder-card-back"></div>
+                    <div class="folder-svg-wrap">
+                        <svg viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g-lang-body" x1="0" y1="0" x2="90" y2="80"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#c8e898" />
+                                    <stop offset="50%" stop-color="#88d8c0" />
+                                    <stop offset="100%" stop-color="#a0b8e8" />
+                                </linearGradient>
+                                <linearGradient id="g-lang-tab" x1="0" y1="0" x2="50" y2="20"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#d8f0a8" />
+                                    <stop offset="100%" stop-color="#98e0cc" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M6 22 Q6 14 14 14 L38 14 Q44 14 46 20 L50 26 L6 26 Z" fill="url(#g-lang-tab)"
+                                opacity="0.9" />
+                            <rect x="6" y="24" width="78" height="50" rx="10" fill="url(#g-lang-body)" opacity="0.88" />
+                            <rect x="18" y="58" width="54" height="2.5" rx="1.5" fill="rgba(255,255,255,0.55)" />
+                            <rect x="18" y="64" width="38" height="2.5" rx="1.5" fill="rgba(255,255,255,0.35)" />
+                            <rect x="6" y="24" width="78" height="18" rx="10" fill="rgba(255,255,255,0.18)" />
+                        </svg>
+                    </div>
+                </div>
+                <span class="folder-label">Languages</span>
+            </div>
+
+        </div>
+
+
+        <div class="info-panel" id="infoPanel">
+            <div class="info-panel-inner">
+
+                <section class="info-section active" id="sec-education">
+                    <p class="section-title">Education</p>
+
+                    <div class="edu-item">
+                        <span class="edu-year">2020 – 2024</span>
+                        <div>
+                            <div class="edu-title">Módulo Grado Superior - Diseño y Edición de Publicaciones Impresas y Multimedias</div>
+                            <div class="edu-sub">IES Islas Filipinas</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="edu-item">
+                        <span class="edu-year">2018 – 2020</span>
+                        <div>
+                            <div class="edu-title">Second Year of Graphic Design</div>
+                            <div class="edu-sub">Escuela Superior de Diseño</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-section" id="sec-work">
+                    <p class="section-title">Work Experience</p>
+
+                    <div class="work-item">
+                        <span class="work-period">2025 – 2026</span>
+                        <div>
+                            <div class="work-role">Freelance Work</div>
+                            <div class="work-company">Branding Design & Web Design</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="work-item">
+                        <span class="work-period">2023 – Present</span>
+                        <div>
+                            <div class="work-role">Internship - Madrid (Spain)</div>
+                            <div class="work-company">Knowmad Mood</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-section" id="sec-abilities">
+                    <p class="section-title">Abilities</p>
+                    <div class="abilities-grid">
+                        <div class="ability-card">
+                            <div class="ability-name">Adobe Photoshop</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="80"></div>
+                            </div>
+                        </div>
+                        <div class="ability-card">
+                            <div class="ability-name">Adobe Illustrator</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="100"></div>
+                            </div>
+                        </div>
+                        <div class="ability-card">
+                            <div class="ability-name">Adobe Indesign</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="80"></div>
+                            </div>
+                        </div>
+                        <div class="ability-card">
+                            <div class="ability-name">Figma</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="40"></div>
+                            </div>
+                        </div>
+                        <div class="ability-card">
+                            <div class="ability-name">Adobe Premiere</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="40"></div>
+                            </div>
+                        </div>
+                        <div class="ability-card">
+                            <div class="ability-name">Visual Studio Code</div>
+                            <div class="ability-bar-wrap">
+                                <div class="ability-bar" data-pct="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-section" id="sec-programming">
+                    <p class="section-title">Programming</p>
+                    <div class="prog-list">
+                        <span class="prog-pill"><span class="prog-dot" style="background:#f0c060"></span>HTML ★★★★★</span>
+                        <span class="prog-pill"><span class="prog-dot" style="background:#60d0f0"></span>CSS ★★★★★</span>
+                        <span class="prog-pill"><span class="prog-dot" style="background:#f0a060"></span>Sass ★★★★★</span>
+                        <span class="prog-pill"><span class="prog-dot" style="background:#d080e0"></span>Vue ★★☆☆☆</span>
+                        <span class="prog-pill"><span class="prog-dot" style="background:#a0c060"></span>JavaScript ★★★☆☆</span>
+                    </div>
+                </section>
+
+                <section class="info-section" id="sec-languages">
+                    <p class="section-title">Languages</p>
+                    <div class="lang-list">
+                        <div class="lang-item">
+                            <span class="lang-name">Spanish</span>
+                            <span class="lang-level">Native</span>
+                            <div class="lang-bar-wrap">
+                                <div class="lang-bar" data-pct="100"></div>
+                            </div>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">English</span>
+                            <span class="lang-level">C1</span>
+                            <div class="lang-bar-wrap">
+                                <div class="lang-bar" data-pct="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

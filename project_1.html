@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diccionario del diablo</title>
+    <link rel="stylesheet" href="assets/css/project_1.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="app/app.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">M̌</div>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" aria-label="Primary navigation">
+            <a href="index.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="portfolio-layout">
+
+        <!-- SIDEBAR: carpetas -->
+        <aside class="sidebar" id="sidebar">
+
+            <!-- Carpeta 1 -->
+            <div class="folder-item is-active" data-index="0">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj1_img1.jpg"
+                    alt="Captive prince">
+                <span class="folder-name">Captive prince</span>
+            </div>
+
+            <!-- Carpeta 2 -->
+            <div class="folder-item" data-index="1">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj2_img1.jpg"
+                    alt="Mangakai">
+                <span class="folder-name">Mangakai</span>
+            </div>
+
+            <!-- Carpeta 3 -->
+            <div class="folder-item" data-index="2">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj3_img1.jpg"
+                    alt="Chimpatia">
+                <span class="folder-name">Chimpatia</span>
+            </div>
+
+            <!-- Carpeta 4 -->
+            <div class="folder-item" data-index="3">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj4_img1.jpg"
+                    alt="Ciiudades">
+                <span class="folder-name">Ciiudades</span>
+            </div>
+
+            <!-- Carpeta 5 -->
+            <div class="folder-item" data-index="4">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj5_img1.png"
+                    alt="Kirby">
+                <span class="folder-name">Kirby</span>
+            </div>
+
+            <!-- Carpeta 6 -->
+            <div class="folder-item" data-index="5">
+                <div class="folder-tab"></div>
+                <div class="folder-body"></div>
+                <img class="folder-preview"
+                    src="assets/img/pj6_img1.jpg"
+                    alt="Cata la lata">
+                <span class="folder-name">Cata la lata</span>
+            </div>
+
+        </aside>
+
+        <!-- PANEL: scroll de imágenes -->
+        <main class="content-panel" id="contentPanel">
+
+            <div class="project-slide" id="slide-0">
+                <img src="assets/img/pj1_img1.jpg" alt="Proyecto 1 - imagen 1">
+                <img src="assets/img/pj1_img2.jpg" alt="Proyecto 1 - imagen 2">
+                <img src="assets/img/pj1_img3.jpg" alt="Proyecto 1 - imagen 3">
+                <img src="assets/img/pj1_img4.jpg" alt="Proyecto 1 - imagen 4">
+                <img src="assets/img/pj1_img5.jpg" alt="Proyecto 1 - imagen 5">
+                <img src="assets/img/pj1_img6.jpg" alt="Proyecto 1 - imagen 6">
+            </div>
+
+            <div class="project-slide" id="slide-1">
+                <img src="assets/img/pj2_img1.jpg" alt="Proyecto 2 - imagen 1">
+                <img src="assets/img/pj2_img2.jpg" alt="Proyecto 2 - imagen 2">
+                <img src="assets/img/pj2_img3.jpg" alt="Proyecto 2 - imagen 3">
+                <img src="assets/img/pj2_img4.jpg" alt="Proyecto 2 - imagen 4">
+                <img src="assets/img/pj2_img5.jpg" alt="Proyecto 2 - imagen 5">
+                <img src="assets/img/pj2_img6.jpg" alt="Proyecto 2 - imagen 6">
+                <img src="assets/img/pj2_img7.jpg" alt="Proyecto 2 - imagen 7">
+                <img src="assets/img/pj2_img8.jpg" alt="Proyecto 2 - imagen 8">
+            </div>
+
+            <div class="project-slide" id="slide-2">
+                <img src="assets/img/pj3_img1.jpg" alt="Proyecto 3 - imagen 1">
+                <img src="assets/img/pj3_img2.jpg" alt="Proyecto 3 - imagen 2">
+                <img src="assets/img/pj3_img3.jpg" alt="Proyecto 3 - imagen 3">
+                <img src="assets/img/pj3_img4.jpg" alt="Proyecto 3 - imagen 4">
+                <img src="assets/img/pj3_img5.jpg" alt="Proyecto 3 - imagen 5">
+            </div>
+
+            <div class="project-slide" id="slide-3">
+                <img src="assets/img/pj4_img1.jpg" alt="Proyecto 4 - imagen 1">
+                <img src="assets/img/pj4_img2.jpg" alt="Proyecto 4 - imagen 2">
+                <img src="assets/img/pj4_img3.jpg" alt="Proyecto 4 - imagen 3">
+                <img src="assets/img/pj4_img4.jpg" alt="Proyecto 4 - imagen 4">
+            </div>
+
+            <div class="project-slide" id="slide-4">
+                <img src="assets/img/pj5_img1.png" alt="Proyecto 5 - imagen 1">
+                <img src="assets/img/pj5_img2.png" alt="Proyecto 5 - imagen 2">
+                <img src="assets/img/pj5_img3.png" alt="Proyecto 5 - imagen 3">
+            </div>
+
+            <div class="project-slide" id="slide-5">
+                <img src="assets/img/pj6_img1.jpg" alt="Proyecto 6 - imagen 1">
+                <img src="assets/img/pj6_img2.jpg" alt="Proyecto 6 - imagen 2">
+                <img src="assets/img/pj6_img3.jpg" alt="Proyecto 6 - imagen 3">
+                <img src="assets/img/pj6_img4.jpg" alt="Proyecto 6 - imagen 4">
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
